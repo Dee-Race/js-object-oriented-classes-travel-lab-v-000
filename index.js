@@ -1,14 +1,14 @@
 class Driver {
-  constructor(name, date) {
+  constructor(name, startDate) {
     this.name = name
-    this.date = date
+    this.startDate = new Date(startDate)
   }
 
-  startDate() {
-    return new Date()
+  yearsExperienceFromBeginningOf(endDate) {
+    return endDate - `${this.startDate.getFullYear()}` - 1
   }
+}
 
-  yearsExperienceFromBeginningOf(year) {
-
-  }
+class Route {
+  
 }
